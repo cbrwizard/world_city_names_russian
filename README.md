@@ -65,3 +65,4 @@ end
 <p><code>rake db:seed</code></p>
 </li>
 </ol><p>Готово, вы восхитительны!</p>
+<p>Оставьте свое впечатление на <a href="http://brainlook.org/">Brainlook</a></p>
