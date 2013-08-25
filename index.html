@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="World city names russian : Файлы формата seeds.rb для Ruby on Rails, содержащие страны и города мира на русском языке. Со связями и без повторов." />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>World city names russian by cbrwizard</title>
+    <title>World city names russian</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>World city names russian</h1>
-        <h2>Файлы формата seeds.rb для Ruby on Rails, содержащие страны и города мира на русском языке. Со связями и без повторов.</h2>
-        <a href="https://github.com/cbrwizard/world_city_names_russian" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/cbrwizard/world_city_names_russian">View on GitHub</a>
+
+          <h1 id="project_title">World city names russian</h1>
+          <h2 id="project_tagline">Файлы формата seeds.rb для Ruby on Rails, содержащие страны и города мира на русском языке. Со связями и без повторов.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/cbrwizard/world_city_names_russian/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/cbrwizard/world_city_names_russian/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a name="%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" class="anchor" href="#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5"><span class="octicon octicon-link"></span></a>Описание</h1>
 
 <h2>
@@ -50,6 +53,32 @@
 <a name="%D0%92-%D1%87%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0" class="anchor" href="#%D0%92-%D1%87%D0%B5%D0%BC-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0"><span class="octicon octicon-link"></span></a>В чем преимущества?</h2>
 
 <p>Очень простая структура - нет ничего лишнего. У каждого города есть страна. Отсутствуют повторы. Благодаря формату seed, эти данные могут быть одинаково легко интегрированы в любой тип БД.</p>
+
+<h2>
+<a name="%D0%A2%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B6%D0%B5-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0" class="anchor" href="#%D0%A2%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B6%D0%B5-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0"><span class="octicon octicon-link"></span></a>Так какая же структура?</h2>
+
+<p><code>table "cities"</code></p>
+
+<pre><code>`t.string   "name"`
+
+`t.integer  "country_id"`
+</code></pre>
+
+<p><code>end</code></p>
+
+<p><code>table "countries"</code></p>
+
+<pre><code>`t.string   "name"`
+</code></pre>
+
+<p><code>end</code></p>
+
+<h2>
+<a name="%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B5%D0%B9" class="anchor" href="#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B5%D0%B9"><span class="octicon octicon-link"></span></a>Пример записей:</h2>
+
+<p><code>&lt;City id: 173, name: "Санкт-Петербург", country_id: 1, created_at: "2013-08-25 10:13:39", updated_at: "2013-08-25 10:13:39"&gt;</code></p>
+
+<p><code>&lt;Country id: 105, name: "Япония", created_at: "2013-08-25 10:13:37", updated_at: "2013-08-25 10:13:37"&gt;</code></p>
 
 <h1>
 <a name="%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="anchor" href="#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"><span class="octicon octicon-link"></span></a>Использование</h1>
@@ -80,25 +109,18 @@
 <p><code>rake db:seed</code></p>
 </li>
 </ol><p>Готово, вы восхитительны!</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/cbrwizard/world_city_names_russian/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/cbrwizard/world_city_names_russian/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/cbrwizard/world_city_names_russian"></a> is maintained by <a href="https://github.com/cbrwizard">cbrwizard</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+      </section>
     </div>
 
-  
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">World city names russian maintained by <a href="https://github.com/cbrwizard">cbrwizard</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
