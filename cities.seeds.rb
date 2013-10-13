@@ -607,7 +607,7 @@ City.create([
   { name: "Терновка", country_id: 1 },
   { name: "Хохольский", country_id: 1 },
   { name: "Эртиль", country_id: 1 },
-  { name: "нововоронеж", country_id: 1 },
+  { name: "Нововоронеж", country_id: 1 },
   { name: "Агвали", country_id: 1 },
   { name: "Акуша", country_id: 1 },
   { name: "Ахты", country_id: 1 },
